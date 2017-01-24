@@ -60,7 +60,6 @@ img.front{
 	border:1px solid #fff;
 }
 
-img.front:hover{ opacity: 0.8; }
 
 img.avatar{
 	border-radius: 400px;
@@ -68,9 +67,7 @@ img.avatar{
 }
 
 
-.mine{
-	bottom:0px;
-}
+
 
 
 
@@ -142,7 +139,6 @@ body, html {
 	text-align: center;
 }
 
-
 .caption a{
 	text-decoration: none;
 	background-color: #111;
@@ -163,3 +159,36 @@ body, html {
 	color:#111;
 }
 
+.imgWrap {
+  position: relative;
+  height: 309px;
+  width: 309px;
+}
+.imgDescription {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+      
+}
+.imgWrap:hover .imgDescription {
+	visibility: visible;
+	opacity: 1;
+	transition: all .3s ease-in-out;
+
+}
+
+.front:hover{
+	opacity: 0.3;
+	transition: all .3s ease-in-out;
+}
+
+.capcha{
+	text-align: center;
+	display: block;
+	margin:0.5 0.5 0 0.5em;
+}
